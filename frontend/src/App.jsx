@@ -1,11 +1,15 @@
 
-function App() {
+import { RecoilRoot } from "recoil";
+import Routes from "@pages/Routes";
 
+
+
+function App() {
   return (
-    <div>
-        Hello world
-    </div>
-  )
+    <RecoilRoot>
+      <Routes />
+    </RecoilRoot>
+  );
 }
 
-export default App
+export default App;
